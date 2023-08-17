@@ -6,6 +6,14 @@
     --primary-font-famaly: "Roboto", sans-serif;
     --primary-logo-color: #4d5ae5;
     --secondary-text-color: #2E2F42;
+    --accent-color: #404BBF; 
+    --light-text-color: #FFFFFF;
+    --secondary-bg-color: #2E2F42;
+    --bg-button-color: #4D5AE5;
+    --team-bg-color: #F4F4FD;
+    --footer-text-color: #F4F4FD;
+    --porfolio-btn-text: #4D5AE5;
+    --portfolio-btn-bg: #F4F4FD;
 }
 
 body {
@@ -62,88 +70,76 @@ button {
     letter-spacing: 0.02em;
 
 }
-
-
-.contact-link{
-    font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.32px;
-        color: var(--slate, #434455);
-}
-.contact-link{
-    font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.32px;
-        color: var(--slate, #434455);
-}
 .menu-link:hover,
-.menu-link:focus{
-    color: #404BBF;
+.menu-link:focus {
+    color: var(--accent-color);
 }
+
+.contact-link{
+    
+        font-size: 16px;
+      
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        color: var(--primery-color);
+}
+
 .contact-link:hover,
 .contact-link:focus{
-    color: #404BBF;
+    color:var(--accent-color);
 }
 /*=========== /PAGE HEADER ==========*/
 
   /*=========== HERO ==========*/
   .hero{
-      background-color: var(--primery-color);
+      background-color: var(--secondary-bg-color);
   }
 
   .main-title{
 
       text-align: center;
-      font-family: Roboto;
+
       font-size: 56px;
-      font-style: normal;
-      font-weight: 700;
       line-height: 1.07;
-      letter-spacing: 1.12px;
-      color: #FFF;
+      letter-spacing: 0.02em;
+      color: var(--light-text-color);
   }
 
   .order-servis {
-      font-family: Roboto;
-      font-size: 16px;
-      font-weight: 500;
-      background-color: #4D5AE5;
-      color: #FFFFFF;
+    color:var(--light-text-color);
+
+        font-family: var(--primary-font-famaly);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+      background-color: var(--bg-button-color);
+        letter-spacing: 0.04em;
+        cursor: pointer;
   }
 
   .order-servis:hover,
   .order-servis:focus {
-      background-color: #404BBF;
-      color: #FFFFFF
+      background-color: var(--accent-color);
+  }
 
   /*=========== /HERO ==========*/
 
 
         /*=========== BENEFITS ==========*/
     
-       }
+       
         .benefits-list-title {
-            font-family: Roboto;
             font-size: 20px;
-            font-style: normal;
             font-weight: 500;
             line-height: 1.2;
-            letter-spacing: 0.4px;
-            color: var(--primery-color);
+            letter-spacing: 0.02em;
+            color: var(--secondary-text-color);
         }
     
         .benefits-list-text {
-            font-family: Roboto;
             font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
             line-height: 1.5;
-            letter-spacing: 0.32px;
-            color: var(--primery-color);
+            letter-spacing: 0.02em;
         }
     
         /*=========== /BENEFITS ==========*/
@@ -151,190 +147,115 @@ button {
         /*========== SPECIFICS OF WORK =========*/
         .what-doing-title {
             text-align: center;
-            font-family: Roboto;
             font-size: 36px;
-            font-style: normal;
-            font-weight: 700;
             line-height: 1.11;
-            letter-spacing: 0.72px;
+            letter-spacing: 0.02em;
             text-transform: capitalize;
-            color: var(--primery-color)
+            color: var(--secondary-text-color);
+
         }
     
         /*========== /SPECIFICS OF WORK =========*/
     
         /*========== OUR TEAM =========*/
+                .our-team {
+                    background-color: var(--team-bg-color);
+                }
         .our-team-title {
     
             text-align: center;
-            font-family: Roboto;
             font-size: 36px;
-            font-style: normal;
-            font-weight: 700;
             line-height: 1.11;
-            letter-spacing: 0.72px;
+            letter-spacing: 0.02em;
             text-transform: capitalize;
-            color: var(--primery-color);
+            color: var(--secondary-text-color);
         }
-    
+        .our-team-list-iten {
+            background-color: var(--primary-bg-color);
+        }
+
         .our-team-list-title {
     
             text-align: center;
-            font-family: Roboto;
             font-size: 20px;
-            font-style: normal;
             font-weight: 500;
             line-height: 1.2;
-            letter-spacing: 0.4px;
-            color: var(--primery-color);
+            letter-spacing: 0.02em;
+            color: var(--secondary-text-color);
         }
     
         .our-team-list-text {
     
             text-align: center;
-            font-family: Roboto;
             font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
             line-height: 1.5;
-            letter-spacing: 0.32px;
-            color: var(--primery-color);
+            letter-spacing: 0.02em;
         }
     
         /*========== /OUR TEAM =========*/
 
+ /*========== FOOTER =========*/
+                .page-footer {
+                    background-color: var(--secondary-bg-color);
+                }
+        
+                   .footer-logo-part {
+        color: var(--footer-text-color);
+                   }
+        
+                .page-footer-text {
+        
+                    font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: 0.02em;
+                    color: var(--footer-text-color);
 
-
+                }
 /*=========== HERO POTFOLIO ==========*/
-.all{
-    font-family: Roboto;
-        font-size: 16px;
-        font-weight: 500;
-        background-color: #E7E9FC;
-        color: var(--second-color)
+.portfolio-btn{
+color: var(--porfolio-btn-text);
+
+    font-family: var(--primary-font-famaly);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(24/16);
+ 
+    letter-spacing: 0.04em;
+    cursor:pointer;
+    background-color: var(--portfolio-btn-bg);
 }
-.all:hover,
-.all:focus{
-    background-color: #404BBF;
-    color: #FFFFFF
-}
-.web-site{
-    font-family: Roboto;
-        font-size: 16px;
-        font-weight: 500;
-        background-color: #E7E9FC;
-        color: var(--second-color)
-}
-.web-site:hover,
-.web-site:focus{
-    background-color: #404BBF;
-        color: #FFFFFF
+.portfolio-btn:hover,
+.portfolio-btn:focus{
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
 }
 
-.app{
-    font-family: Roboto;
-        font-size: 16px;
-        font-weight: 500;
-        background-color: #E7E9FC;
-        color: var(--second-color)
-}
-
-.app:hover,
-.app:focus{
-    background-color: #404BBF;
-        color: #FFFFFF
-}
-
-.desing{
-font-family: Roboto;
-font-size: 16px;
-font-weight: 500;
-background-color: #E7E9FC;
-color: var(--second-color)
-}
-
-.desing:hover,
-.desing:focus{
-    background-color: #404BBF;
-        color: #FFFFFF
-    }
-
-.marketing{
-    font-family: Roboto;
-        font-size: 16px;
-        font-weight: 500;
-        background-color: #E7E9FC;
-        color: var(--second-color)
-}
-
-.marketing:hover,
-.marketing:focus{
-    background-color: #404BBF;
-        color: #FFFFFF
-}
 /*=========== /HERO PORTFOLIO ==========*/
 
 /*=========== MOBILE APPLICATIONS ==========*/
 .mobile-applications-title{
 
-        font-family: Roboto;
+
         font-size: 20px;
-        font-style: normal;
+
         font-weight: 500;
         line-height: 1.2;
-        letter-spacing: 0.4px;
-        color: var(--primery-color);
+        letter-spacing: 0.02em;
+        color: var(--secondary-text-color);
 }
 
 .mobile-applications-text{
 
-        font-family: Roboto;
+
         font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
         line-height: 1.5;
-        letter-spacing: 0.32px;
-        color: #434455;
+        letter-spacing: 0.02em;
+        color: var(--primery-color);
 }
 /*=========== /MOBILE APPLICATIONS ==========*/
 
         /*========== FOOTER =========*/
-        .page-footer {
-            background-color: #434455;
-        }
-    
-        .footer-logotype {
-    
-            font-family: Raleway;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 1.16;
-            letter-spacing: 0.54px;
-            text-transform: uppercase;
-            color: #4D5AE5;
-    
-    
-            font-family: Raleway;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 1.16;
-            letter-spacing: 0.54px;
-            text-transform: uppercase;
-            color: #F4F4FD;
-        }
-    
-        .page-footer-text {
-    
-            font-family: Roboto;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 1.5;
-            letter-spacing: 0.32px;
-            color: #F4F4FD;
-        }
+
     
         /*========== /FOOTER =========*/
         
